@@ -1,5 +1,6 @@
 // High quality Fufu wooden fish image
-export const FUFU_IMAGE_URL = "https://images.unsplash.com/photo-1612536053381-696179b53600?auto=format&fit=crop&w=800&q=80"; 
+// 使用本地图片，需要放在 public 文件夹中
+export const FUFU_IMAGE_URL = "/fufu.jpg"; 
 
 // A seamless, light wood texture pattern for the background
 export const WOOD_TEXTURE_URL = "https://images.unsplash.com/photo-1589128766575-534e79391e98?auto=format&fit=crop&w=1080&q=80";
