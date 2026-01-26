@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Fu Wooden Fish</title>
+    <!-- Keeping Tailwind CDN for simplicity so you don't need extra config files -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        touch-action: manipulation;
+        overscroll-behavior: none;
+        user-select: none;
+        -webkit-user-select: none;
+        background-color: #E6DCC3;
+      }
+      @keyframes floatUp {
+        0% {
+          transform: translate(-50%, -100%) scale(0.8);
+          opacity: 1;
+        }
+        100% {
+          transform: translate(-50%, -250%) scale(1.1);
+          opacity: 0;
+        }
+      }
+      .animate-float-up {
+        animation: floatUp 0.8s ease-out forwards;
+      }
+      ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
